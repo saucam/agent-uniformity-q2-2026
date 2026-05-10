@@ -1,0 +1,16 @@
+repo,lang,repo_ai_ratio_obs,n_functions,repo_ai_fn_rate,isolated_n,isolated_ai_fn_rate,ai_surplus_in_isolated,human_surplus_signal
+LPilic/n8n-library,javascript,0.971,701,0.977,70,0.986,0.009,neutral
+NikolayS/rpg,rust,0.582,2497,0.497,249,0.57,0.073,neutral
+Termix-SSH/Termix,typescript,0.827,2527,0.844,252,1.0,0.156,no
+armelhbobdad/bmad-module-skill-forge,python,0.817,130,0.762,13,0.538,-0.223,yes
+brycewang-stanford/StatsPAI,python,0.929,2091,0.913,209,0.919,0.006,neutral
+davila7/claude-code-templates,python,0.625,2953,0.602,295,0.658,0.056,neutral
+garrytan/gbrain,typescript,0.986,1747,0.991,174,0.983,-0.009,neutral
+link-assistant/hive-mind,javascript,0.713,1413,0.647,141,0.567,-0.079,neutral
+mksglu/context-mode,typescript,0.672,657,0.662,65,0.523,-0.139,yes
+nkmr-jp/prompt-line,typescript,0.897,1016,0.901,101,0.911,0.01,neutral
+sinelaw/fresh,rust,0.552,58,0.552,5,0.6,0.048,neutral
+spider-rs/spider,rust,0.668,3032,0.684,303,0.604,-0.08,neutral
+temm1e-labs/temm1e,rust,0.946,58,0.966,5,0.8,-0.166,yes
+tomasz-tomczyk/crit,go,0.644,1306,0.605,130,0.969,0.364,no
+trailofbits/skills,python,1.0,263,1.0,26,1.0,0.0,neutral

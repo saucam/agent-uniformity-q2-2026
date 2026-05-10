@@ -1,0 +1,39 @@
+{
+  "harness_version": "0.1.0.dev0",
+  "python_version": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "platform": "Linux-6.8.0-90-generic-x86_64-with-glibc2.39",
+  "env": {},
+  "config": {
+    "benchmark": "code-uniformity-q2-2026",
+    "adapters": [
+      {
+        "name": "semble",
+        "params": {
+          "per_language_thresholds": {
+            "python": 0.012,
+            "typescript": 0.012,
+            "javascript": 0.012,
+            "go": 0.012,
+            "rust": 0.012
+          },
+          "topk": 10,
+          "delete_after_run": true
+        }
+      }
+    ],
+    "evaluators": [
+      "uniformity",
+      "cohesion_coupling",
+      "isolation",
+      "ai_correlation",
+      "cross_language",
+      "quality_proxies"
+    ],
+    "repetitions": 1,
+    "concurrency_per_adapter": 10,
+    "task_filter": null,
+    "max_cost_usd": 0.01,
+    "per_task_wall_time_seconds": 1800,
+    "seed": 0
+  }
+}

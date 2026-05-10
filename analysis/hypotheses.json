@@ -1,0 +1,89 @@
+{
+  "H1": {
+    "hypothesis": "AI-authored functions are more uniform than human-authored within the same repo",
+    "n_repos": 45,
+    "mean_gap": 0.00033630616824978116,
+    "median_gap": -0.00023502449500765674,
+    "ci95": [
+      -0.0013165649363816275,
+      0.002007741678834904
+    ],
+    "directional_match": true
+  },
+  "H2": {
+    "hypothesis": "AI-vs-human gap grows with repo AI authorship ratio",
+    "pearson_r": 0.5787746918113881,
+    "directional_match": true,
+    "n_pairs": 45
+  },
+  "H3": {
+    "hypothesis": "DRY-cluster density higher in AI-heavy repos",
+    "high_ai_mean_density": 7.37057295208565,
+    "low_ai_mean_density": 8.24018046150292,
+    "directional_match": false
+  },
+  "H4": {
+    "hypothesis": "Most-isolated functions in AI-heavy repos are disproportionately human-authored. Test: in repos with observed AI ratio >= 0.5, compare AI-fn-rate in bottom-10% isolated functions vs the repo's overall AI-fn-rate. Negative surplus = humans are over-represented in the isolated tail.",
+    "n_repos_high_ai": 15,
+    "mean_ai_surplus_in_isolated": 0.002,
+    "median_ai_surplus_in_isolated": 0.006,
+    "n_repos_with_human_surplus_signal": 3,
+    "n_repos_with_neutral": 10,
+    "n_repos_with_ai_surplus_signal": 2,
+    "directional_match": false
+  },
+  "H5": {
+    "hypothesis": "Within Python repos, AI-authored functions have lower cyclomatic complexity than human functions of matched line-size.",
+    "n_repos": 5,
+    "bin_summary": [
+      {
+        "bin": "4-10",
+        "ai_n": 526,
+        "human_n": 944,
+        "ai_mean_cc": 1.734,
+        "human_mean_cc": 1.792,
+        "diff_ai_minus_human": -0.059,
+        "directional_match_in_bin": true
+      },
+      {
+        "bin": "11-20",
+        "ai_n": 750,
+        "human_n": 813,
+        "ai_mean_cc": 2.672,
+        "human_mean_cc": 2.717,
+        "diff_ai_minus_human": -0.045,
+        "directional_match_in_bin": true
+      },
+      {
+        "bin": "21-50",
+        "ai_n": 1159,
+        "human_n": 1047,
+        "ai_mean_cc": 5.07,
+        "human_mean_cc": 4.572,
+        "diff_ai_minus_human": 0.498,
+        "directional_match_in_bin": false
+      },
+      {
+        "bin": "51-inf",
+        "ai_n": 1229,
+        "human_n": 373,
+        "ai_mean_cc": 12.819,
+        "human_mean_cc": 12.952,
+        "diff_ai_minus_human": -0.133,
+        "directional_match_in_bin": true
+      }
+    ],
+    "bins_with_directional_match": "3/4",
+    "directional_match": true
+  },
+  "H6": {
+    "hypothesis": "AI uniformity gap varies across languages",
+    "language_means": {
+      "python": 0.001777509800951705,
+      "typescript": -0.0025441030471998406,
+      "javascript": 0.0038252185053906087,
+      "go": 0.00012649431823752729,
+      "rust": 0.0002787083828254897
+    }
+  }
+}
